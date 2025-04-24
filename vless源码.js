@@ -885,7 +885,7 @@ function copyToClipboard(text) {
   input.select();
   document.execCommand('Copy');
   document.body.removeChild(input);
-  alert('已复制到剪贴板');
+  alert(Copied to clipboard'');
 }
 </script>
 `;
@@ -898,7 +898,7 @@ ${displayHtml}
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <h1>Cloudflare-workers/pages-\u0076\u006c\u0065\u0073\u0073代理脚本 V25.4.7</h1>
+            <h1>Cloudflare-workers/pages-\u0076\u006c\u0065\u0073\u0073proxy script V25.4.7</h1>
 	    <hr>
             <p>${noteshow}</p>
             <hr>
@@ -906,50 +906,50 @@ ${displayHtml}
 	    <hr>
             <br>
             <br>
-            <h3>1：CF-workers-\u0076\u006c\u0065\u0073\u0073+ws节点</h3>
+            <h3>1：CF-workers-\u0076\u006c\u0065\u0073\u0073+wsnode</h3>
 			<table class="table">
 				<thead>
 					<tr>
-						<th>节点特色：</th>
-						<th>单节点链接如下：</th>
+						<th>Node features：</th>
+						<th>The single node link is as follows：</th>
 					</tr>
 				</thead>
 				<tbody>
 					<tr>
-						<td class="limited-width">关闭了TLS加密，无视域名阻断</td>
+						<td class="limited-width">Disable TLS encryption and ignore domain name blocking</td>
 						<td class="limited-width">${w\u0076\u006c\u0065\u0073\u0073ws}</td>
-						<td><button class="btn btn-primary" onclick="copyToClipboard('${w\u0076\u006c\u0065\u0073\u0073ws}')">点击复制链接</button></td>
+						<td><button class="btn btn-primary" onclick="copyToClipboard('${w\u0076\u006c\u0065\u0073\u0073ws}')">Click to copy link</button></td>
 					</tr>
 				</tbody>
 			</table>
-            <h5>客户端参数如下：</h5>
+            <h5>The client parameters are as follows：</h5>
             <ul>
-                <li>客户端地址(address)：自定义的域名 或者 优选域名 或者 优选IP 或者 反代IP</li>
-                <li>端口(port)：7个http端口可任意选择(80、8080、8880、2052、2082、2086、2095)，或反代IP对应端口</li>
-                <li>用户ID(uuid)：${userID}</li>
-                <li>传输协议(network)：ws 或者 websocket</li>
-                <li>伪装域名(host)：${hostName}</li>
-                <li>路径(path)：/?ed=2560</li>
-		<li>传输安全(TLS)：关闭</li>
+                <li>client address(address)：Custom domain name or preferred domain name or preferredIP or anti-generation IP</li>
+                <li>port(port)：7 http ports can be selected arbitrarily(80、8080、8880、2052、2082、2086、2095)，Or reverse IP corresponding port</li>
+                <li>User ID(uuid)：${userID}</li>
+                <li>transport protocol(network)：ws or websocket</li>
+                <li>Disguise domain name(host)：${hostName}</li>
+                <li>path(path)：/?ed=2560</li>
+		<li>Transport security(TLS)：closure</li>
             </ul>
             <hr>
 			<hr>
 			<hr>
             <br>
             <br>
-            <h3>2：CF-workers-\u0076\u006c\u0065\u0073\u0073+ws+tls节点</h3>
+            <h3>2：CF-workers-\u0076\u006c\u0065\u0073\u0073+ws+tls node</h3>
 			<table class="table">
 				<thead>
 					<tr>
-						<th>节点特色：</th>
-						<th>单节点链接如下：</th>
+						<th>Node features：</th>
+						<th>The single node link is as follows：</th>
 					</tr>
 				</thead>
 				<tbody>
 					<tr>
-						<td class="limited-width">启用了TLS加密，<br>如果客户端支持分片(Fragment)功能，建议开启，防止域名阻断</td>
+						<td class="limited-width">TLS encryption enabled，<br>If the client supports the fragment function, it is recommended to enable it to prevent domain name blocking.</td>
 						<td class="limited-width">${p\u0076\u006c\u0065\u0073\u0073wstls}</td>	
-						<td><button class="btn btn-primary" onclick="copyToClipboard('${p\u0076\u006c\u0065\u0073\u0073wstls}')">点击复制链接</button></td>
+						<td><button class="btn btn-primary" onclick="copyToClipboard('${p\u0076\u006c\u0065\u0073\u0073wstls}')">Click to copy link</button></td>
 					</tr>
 				</tbody>
 			</table>
